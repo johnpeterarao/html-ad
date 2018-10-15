@@ -1,0 +1,626 @@
+/* Web Fonts & Fonts */
+@font-face {
+    font-family: 'montserratsemi_bold';
+    src: url('../fonts/montserrat-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'montserratmedium';
+    src: url('../fonts/montserrat-medium-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+/* Reset */
+
+* {outline: none; box-sizing: border-box; -webkit-overflow-scrolling: touch}
+a {text-decoration: none; cursor: pointer;}
+body, html, h1, h2, h3, h4, h5, h6, p, header, footer, div, article, section, aside {padding: 0; margin: 0; position: relative;}
+body, html {height: 100%;}
+input, select, textarea, button {outline: 0; border: 0; appearance: none; -webkit-appearance: none; -moz-appearance: none; -o-appearance: none;}
+
+/* Common Classes */
+.wid100 {width:100%; float: left; }
+.fleft {float: left;}
+.fright {float: right;}
+.listn {list-style: none; margin: 0; padding: 0;}
+.defimg {width: 100%; height: auto;}
+.defimg2 {width: auto; height: auto;}
+.coverimg {width: 100%; height: 100%; object-fit: cover;}
+.containimg {width: 100%; height: 100%; object-fit: contain;}
+.pagewrapper {width: 100%;  margin: 0 auto; max-width: 1366px; padding: 0 25px;}
+.pagewrapper2 {width: 100%; margin: 0 auto; max-width: 990px;}
+img {@extend .defimg}
+.close {width: 35px; height: 35px; background: url(../images/iconset1.png) no-repeat right -35px; position: absolute; right: 10px; top: 10px;}
+.pad-0 { padding: 0;}
+.clearfix { display: block; clear: both;}
+
+/* Colors & Fonts */
+$fontmain: 'montserratregular', Arial, sans-serif;
+$fonthead: 'montserratsemi_bold', Arial, sans-serif;
+$fontlink: 'Proxima Nova', Arial, sans-serif;
+$fontcat: 'montserratsemibold', Arial, sans-serif;
+$fontmed : 'montserratmedium', Arial, sans-serif;
+
+
+
+
+/* Colors */
+$white: #fff;
+$yellowgreen: #77bb53;
+$orange: #e48810;
+$lightgreen: #d0cc3a;
+$transorange: rgba(228,136,16,0.7);
+$translightgreen: rgba(194,205,35,0.7);
+$transblack: rgba(0,0,0,0.6);
+$textgray: #353535;
+$darkgray: #2d2d2d;
+$violet : #2c4059;
+$violet_title : #203b56;
+
+
+.cs-container { padding: 0px 10%; }
+
+.wrapper { padding: 0px 5.9%; }
+
+.title_ { font-size: 30px; font-family: $fonthead;  color: #203b56; }
+
+
+.contact_hldr {
+    a { padding: 10px 25px; border-radius: 15px; background: #3da149; color: #fff; font-family: $fonthead; text-transform: uppercase; text-decoration: none; font-size: 15px;}
+}
+
+.contact_hldr_white {
+    a { padding: 10px 25px; border-radius: 15px; background: #fff; color: #3da149; font-family: $fonthead; text-transform: uppercase; text-decoration: none; font-size: 15px;}
+}
+
+
+.custom-nav { position: absolute; top: 25px; width: 100%; left: 0; z-index: 2;
+    .nav_hldr { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-flex-flow: row wrap; justify-content: flex-start; flex-wrap: wrap;   
+        > li {
+
+            a { font-size: 18px; text-transform: uppercase; color: #00002f; text-decoration: none; padding: 0px 28px;}
+        }
+
+
+    }
+
+    .burger { cursor: pointer; float: left; top: 5px; position: absolute;
+                span { height: 2px; width: 22px; display: block; background: #00002f; margin-bottom: 5px;}
+                span:last-child { margin-bottom: 0px;}
+    }
+}
+
+
+.sidebar_ {     width: 250px; background: #3da149; /* padding: 40px 20px; */ position: fixed; top: 0; bottom: 0; z-index: 3; overflow: hidden; transition: .3s ease-out; left: -251px; padding: 50px 20px;
+    > ul {
+        > li { display: block;
+            > a { font-size: 18px;  color: $white; text-decoration: none; text-transform: uppercase; display: block;  padding: 10px 0px;}
+        }
+    }
+
+    .close_area { border: 1px solid #fff; border-radius: 50%; text-align: center; position: absolute; padding: 5px 10px; top: 10px; right: 20px; cursor: pointer;
+        a {
+            i { font-size: 20px; color: $white;}
+        }
+    }
+}
+
+.sidebar_.active { left: 0px; transition: .3s;}
+
+
+
+
+
+.home{
+
+    .sec-1 { height: 545px; background: url(../images/sec1.jpg) no-repeat; background-position: top right;
+        .hero {     max-width: 440px; width: 100%;  position: absolute; top: 50%; left: 10%; transform: translate(0, -50%); padding: 0px 15px;
+            h2 { font-size: 40px; color: #2c4059; font-family: $fonthead; text-align: center; margin-bottom: 15px;}
+            p { font-family: $fontmain; font-size: 16px; color: $violet; text-align: center;}
+
+            .watch-hldr {  text-align: center; margin-top: 15px;
+                a { color: #000032; font-family: $fontmed; text-transform: uppercase;  font-size: 16px;  text-decoration: none; 
+                    img { width: auto; height: auto; margin-left: 5px; margin-top: -5px;}
+                }
+            }
+
+            .contact_hldr { margin-top: 25px; text-align: center;}
+        }
+    }
+
+    .sec-2 { padding: 40px 0px;
+
+        .hldr {
+            > h3 { text-align: center; margin-bottom: 15px;}
+
+            > .p_hldr { max-width: 48%; width: 100%; margin: 0 auto; text-align: center;
+                > p { font-size: 16px; color: $violet; font-family: $fontmain; line-height: 20px;}
+            }
+
+            .tab_menu { margin-top: 25px; margin-bottom: 35px;
+                > ul.client-tabs { text-align: center; border-bottom: 0px;
+                    > li { float: none; display: inline-block; border: 0px;
+                        a { cursor: pointer; margin-right: 0px;
+                            img {  width: 150px; height: auto; -webkit-filter: grayscale(100%); filter: grayscale(100%); transition: 0.3 ease-in;}
+                        }
+                    }
+
+                    > li.active, li:hover { 
+                        a { border: 0px}
+                        img { -webkit-filter: grayscale(0); filter: grayscale(0); transition: 0.3 ease-in; }
+                    }
+
+
+
+                }
+            }
+
+            .left_img {
+                > ul { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-flex-flow: row wrap; justify-content: flex-start; flex-wrap: wrap;
+
+                    > li:first-child { min-height: 433px; width: 40%;
+
+                        aside { max-width: 369px; width: 100%; margin: 0 auto;} 
+
+                    }
+
+                    > li:nth-child(2){ width: 60%; padding-left: 40px;
+                        article { 
+                            > h5 { font-family: $fonthead; color: $violet_title; font-size: 16px; margin-bottom: 10px;}
+
+                            > ul {
+                                > li { padding-left: 15px; position: relative;
+                                     p { font-family: $fontmain; font-size: 16px; color: $violet;}
+                                }
+
+                                > li::after { position: absolute; content: ''; width: 5px; height: 9px; background: url(../images/caret.png); left: 0; top: 5px;}
+                            }
+
+                        }
+
+                        .contact_hldr { margin-top: 35px;}
+                    }
+                }
+            }
+
+
+            .right_img {
+
+                > article.intro_ { text-align: center; max-width: 54.5%; width: 100%; margin: 0 auto 40px;
+                    > h6 { font-family: $fonthead; font-size: 16px; color: $violet; text-transform: uppercase; margin-bottom: 5px;}
+
+                    > h3 { color: $violet_title; margin-bottom: 5px;}
+
+                    > p { font-family: $fontmain; color: $violet; font-size: 16px;}
+                }
+
+                > ul { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-flex-flow: row wrap; justify-content: flex-start; flex-wrap: wrap; align-items: center;
+                    > li { width: 50%;
+
+                    }
+
+                    > li:first-child {  
+
+                        .left-text {
+                            > ul {
+                               h5 { font-family: $fonthead; color: $violet; font-size: 16px; margin-bottom: 15px;} 
+
+                               > li { padding-left: 15px; position: relative;
+                                    > p { font-family: $fontmain; font-size: 16px; color: $violet;}
+                               }
+
+                               > li::after {     position: absolute; content: ''; width: 5px; height: 9px; background: url(../images/caret.png); left: 0; top: 5px;}
+                            }
+                        }
+
+                        .contact_hldr { margin-top: 35px; }
+                    }
+
+                    > li:nth-child(2) { 
+                        aside {
+                            img { width: auto; height: auto; max-width: 100%; margin: 0 auto; display: block;}
+                        }
+                    }
+                }
+            }
+
+
+            .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus { border: 0px; background: transparent;}
+
+            .nav>li>a:hover, .nav>li>a:focus { background: transparent; border: 0px;}
+
+        }
+
+    }
+
+
+
+    .sec-3 { padding: 40px 0px;
+        .hldr {
+            > h5 { font-family: $fonthead; font-size: 14px; color: $violet; margin-bottom: 5px; text-align: center; color: $violet_title; text-transform: uppercase;}
+            > h3 { text-align: center; margin-bottom: 40px; padding-bottom: 20px; position: relative; }
+            > h3::after { position: absolute; content: ''; width: 49px; height: 3px; background: #3da149; bottom: 0; left: 50%; transform: translate(-50%, 0);}
+        
+        }
+
+        .phone-hldr {     position: absolute; left: 50%; transform: translate(-50%, 0);}
+
+        ul.item_list { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-flex-flow: row wrap; justify-content: flex-start; flex-wrap: wrap;     min-height: 460px;
+            > li { width: 50%;
+
+                .head_hldr { margin-bottom: 15px;
+                    > h4 { font-family: $fonthead ; text-transform: uppercase; font-size: 20px; text-align: center; margin-bottom: 15px;}       
+                    > p { font-family: $fontmain; color: $violet; text-align: center; font-size: 14px; line-height: 24px;}
+                }
+
+                > h6 { color: #3da149; font-family: $fonthead; font-size: 16px; margin-bottom: 20px;}
+
+                > ul {
+                    > li { margin-bottom: 15px; padding-left: 15px; position: relative;
+                        h5 { font-family: $fonthead; font-size: 16px; color: $violet_title; margin-bottom: 5px;}
+                        p { font-family: $fontmain; font-size: 14px; color: $violet;}
+                    }
+
+                    > li::after {     position: absolute; content: ''; width: 5px; height: 9px; background: url(../images/caret.png); left: 0; top: 5px;}
+                }
+
+                .contact_hldr {margin-top: 35px;}
+            }
+
+            > li:first-child { padding-right: 130px;}
+
+            > li:nth-child(2) {padding-left: 130px;}
+
+
+            
+        }
+
+    }
+
+
+
+    .sec-4 {
+        .hldr {
+            > ul { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-flex-flow: row wrap; justify-content: flex-start; flex-wrap: wrap;
+                > li { width: 50%;
+                    > .listing { padding: 60px 50px; 
+                        > h3 {  margin-bottom: 20px; text-align: center;}
+
+                        > p { text-align: center; font-family: $fontmain; font-size: 14px; color: $violet;}
+
+                        > ul { margin-top: 15px;
+                            > li { padding-left: 15px; position: relative; margin-bottom: 7px;
+                                p { font-family: $fonthead; font-size: 16px; color: $violet;}
+                            }
+
+                            > li::after {     position: absolute; content: ''; width: 5px; height: 9px; background: url(../images/caret.png); left: 0; top: 5px;}
+                        }
+
+                        .contact_hldr { margin-top: 35px;}
+                      
+                    }
+                }
+
+                > li.img-list { position: relative;
+                    aside {  min-height: 636px; position: unset;
+                        img { position: absolute; height: 100%; left: 0; width: 100%; top: 0; object-fit: cover;}
+                    }
+
+                }
+            }
+        }
+    }
+
+    .sec-5 {
+        .hldr {
+            > ul { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-flex-flow: row wrap; justify-content: flex-start; flex-wrap: wrap;
+                > li { 
+                    > .listing { padding: 60px 130px 60px 50px;
+                        > h3 {  margin-bottom: 20px; text-align: center; color: $white}
+
+                        > p { text-align: center; font-family: $fontmain; font-size: 14px; color: $white;}
+
+                        > ul { margin-top: 15px;
+                            > li { margin-bottom: 10px; 
+                                p { font-family: $fontmain; font-size: 16px; color: #88de92; padding-left: 30px;}
+
+                                h5 { font-family: $fonthead; color: $white; font-size: 16px; position: relative; padding-left: 30px; margin-bottom: 15px;
+                                    img {     width: auto; height: auto; position: absolute; left: 0; top: 0;}
+                                }
+                            }
+
+                           
+                        }
+
+                        .contact_hldr_white{margin-top: 35px; text-align: right;}
+                    }
+                }
+
+                > li:first-child { width: 53%;}
+
+                > li:nth-child(2) { width: 47%;}
+
+                > li.green_bg { background: #3da149; color: #fff;}
+
+                > li.img-list { position: relative; background: url(../images/opti_.jpg); background-size: contain;
+                    aside {  min-height: 636px; position: unset; 
+                        /* img { position: absolute; height: 100%; left: 0; width: 100%; top: 0; object-fit: cover;} */
+                    }
+
+                }
+
+
+               
+            }
+
+             .mble_hldr { position: absolute; left: 54%; transform: translate(-50%, 0); z-index: 2;}
+        }
+    }
+
+
+    .sec-6 { padding: 80px 0px; background: url(../images/line.jpg); background-size: cover;
+        .hldr { text-align: center;
+            > h3 { margin-bottom: 15px; color: $white;}
+            > p { font-family: $fontmain; color: $white; font-size: 16px;}
+
+            .cnt_us {     margin-top: 55px; margin-bottom: 15px;
+                a { text-transform: uppercase; background: #fff; color: $violet; padding: 15px 20px; border-radius: 25px; text-decoration: none;}
+            }
+        }
+    }
+
+
+    .sec-7 { padding: 30px 0px;
+        .hldr {
+            > h3 {text-align: center; margin-bottom: 20px;}
+
+            > ul { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-flex-flow: row wrap; justify-content: flex-start; flex-wrap: wrap; max-width: 65%; width: 100%; margin: 0 auto;
+                > li { width: 50%;  padding: 0px 15px;
+                    p { margin-bottom: 10px;
+                        a { font-family: $fontmain; font-size: 14px; color: $violet; text-decoration: none;}
+                    }
+                }
+
+                > li:nth-child(2) { 
+                    > p { display: inline-block; width: 50%; float: left;}
+
+                    > p:first-of-type { width: 100%;}
+                }
+            }
+        }
+    }
+
+
+}
+
+
+.navigator { position: fixed; width: 100%; padding: 20px 0px; background: #fff; border-bottom: 2px solid #25a752; z-index: 3; box-shadow: 0px 5px 13px #b8b8b8; display: none; top: 0;
+
+    .top { float: left;
+        a { font-family: $fontmain; font-size: 16px; color: $violet; text-transform: uppercase;}
+    }
+
+    .right_part { float: right;
+        > ul {
+            > li { display: inline-block;
+
+            }
+
+            > li:first-child {
+                a { color: $white; background: #25a752; padding: 7px 15px; border-radius: 15px; text-decoration: none; text-transform: uppercase; font-size: 16px;
+                    i { margin-right: 10px; font-size: 18px;}
+                }
+            }
+
+            >li:nth-child(2){ padding-left: 10px;
+                a { color: $violet; font-family: $fontmed; color: $violet; text-decoration: none;}
+            }
+        }
+    }
+}
+
+
+.navigator.active {  display: block; animation: blink 1s;}
+
+
+@keyframes blink {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+
+
+footer { padding: 30px 0px;
+
+    aside {
+        img { width: auto; height: auto; max-width: 100%; margin: 0 auto; display: block;}
+    }
+
+}
+
+
+
+.vid-popup { max-width: 650px; width: 100%; margin: 0 auto; background: #fff; padding: 30px 15px; border-radius: 25px;
+    .iframe-hldr { 
+        iframe { width: 100%;}
+    }
+}
+
+
+
+.tab-cs_hldr {
+    .panel-heading {  background: #3da149; border-radius: 0px; 
+        .panel-title { font-family: $fontmain; color: #fff; text-transform: uppercase;
+            a {text-decoration: none;}
+        }
+    }
+
+
+}
+
+
+
+.contact-popup { max-width: 650px; width: 100%; margin: 0 auto; background: #fff; padding: 30px 15px; border-radius: 25px;
+    .form-hldr {
+        h3 {text-align: center; margin-bottom: 40px;}
+
+        > ul {
+            > li { margin-bottom: 15px;
+                h6 { font-family: $fontmain; color: $violet; font-size: 16px; text-transform: uppercase; margin-bottom: 5px;     }
+
+                input[type="text"], input[type="email"] { width: 100%; border: 1px solid #d5d5d5; height: 35px; padding-left: 15px; font-family: $fontmain; font-size: 16px; z-index: 2;}
+
+                textarea { width: 100%; border: 1px solid #d5d5d5;padding-left: 15px; font-family: $fontmain; font-size: 16px; resize: none; }
+            
+
+               
+            }
+
+
+
+
+            > li:last-child { text-align: right;
+                input[type="submit"] { background: #3da149; padding: 10px 25px; border-radius: 25px; color: $white; font-family: $fontmain; font-size: 16px; text-transform: uppercase;}
+            }
+        }
+    }
+}   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tab-content { 
+    .collapse { visibility: visible;}
+}
+
+
+
+
+
+
+
+@media (min-width: 1000px) {
+    .panel-heading {
+      display: none!important;
+    }
+    .panel {
+      border: none!important;
+      box-shadow: none!important;
+    }
+    .panel-collapse {
+      height: auto!important;
+    }
+    .panel-collapse.collapse {
+      display: block!important;
+    }
+}
+@media (max-width: 999px) {
+  .tab-content .tab-pane {
+    display: block!important;
+    visibility: visible!important;
+  }
+  .nav-tabs {
+    display: none!important;
+  }
+  .panel-title a {
+    display: block!important;
+  }
+  .panel {
+    margin: 0!important;
+    box-shadow: none!important;
+    border-radius: 0!important;
+    margin-top: -2px!important;
+  }
+  .tab-pane:first-child .panel {
+    border-radius: 5px 5px 0 0!important;
+  }
+  .tab-pane:last-child .panel {
+    border-radius: 0 0 5px 5px!important;
+  }
+  .tab-content .collapse { display: none!important}
+  .tab-content .collapse.in { display: block!important;}
+}

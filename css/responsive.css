@@ -1,0 +1,101 @@
+@media only screen and (max-width: 1250px){
+	.home .sec-7 .hldr > ul { max-width: 100%!important;}
+}
+
+
+@media only screen and (max-width: 1017px){
+	.home .sec-1 .hero h2 { font-size: 30px!important;}
+	.title_ { font-size: 25px!important;}
+	.cs-container, .wrapper { padding: 0px 20px!important;}
+	
+}
+
+
+
+@media only screen and (max-width: 999px){
+	.home .sec-2 .hldr .tab_menu { display: none;}
+	.home .sec-2 .hldr > .p_hldr { max-width: 100%!important;}
+
+	.tab-cs_hldr { margin-top: 35px;}
+
+	.home .sec-2, .home .sec-3 { padding: 30px 0px!important;}
+
+	.home .sec-3 ul.item_list > li { padding: 0px!important; width: 100%!important;}
+	.home .sec-3 .phone-hldr { position: relative!important; left: 0!important; transform: translate(0, 0)!important;}
+	.home .sec-3 .phone-hldr img { width: 170px; display: block; margin: 0 auto 25px;}
+	.home .sec-3 ul.item_list > li .contact_hldr { margin-bottom: 15px; text-align: left!important;}
+	.home .sec-3 ul.item_list > li .head_hldr > h4 {margin-bottom: 5px!important;}
+	.home .sec-4 .hldr > ul > li { width: 100%!important;}
+	.home .sec-4 .hldr > ul > li > .listing {padding: 30px 20px!important;}
+	.home .sec-4 .hldr > ul > li.img-list aside {min-height: auto!important;}
+	.home .sec-4 .hldr > ul > li.img-list aside img{ position: relative!important; width: 250px!important; display: block!important; margin: 0 auto!important;}
+	.home .sec-4 .hldr > ul > li > .listing .contact_hldr{margin-bottom: 10px!important}
+	.home .sec-5 .hldr > ul > li > .listing{ padding: 30px 20px!important;}
+	.home .sec-5 .hldr > ul > li { width: 100%!important;}
+	.home .sec-5 .hldr .mble_hldr {position: relative!important; left: 0!important; transform: translate(0, 0)!important; float: left;}
+	.home .sec-5 .hldr .mble_hldr img {width: auto!important;padding: 0px 20px;}
+
+	.home .sec-5 .hldr { padding-bottom: 350px;}
+	.home .sec-5 .hldr > ul > li.img-list {position: absolute!important; left: 0; width: 100%; bottom: 0;}
+	.home .sec-5 .hldr > ul > li.img-list aside { min-height: 350px!important;}
+
+	.home .sec-6 { padding: 50px 20px!important;}
+	.home .sec-2 .hldr .left_img > ul > li:nth-child(2) .contact_hldr, .home .sec-2 .hldr .right_img > ul > li:first-child .contact_hldr {margin-bottom: 15px;}
+	.home .sec-2 .hldr .right_img > ul > li:first-child {  padding-right: 20px;}
+	.home .sec-2 .hldr .right_img > article.intro_ {max-width: 100%!important;}
+		.home .sec-1{ background-position: top center!important;}
+
+	
+
+}
+
+@media only screen and (max-width: 800px){
+	.home .sec-7 .hldr > ul > li { width: 100%!important; padding: 0px!important;}
+	.home .sec-7 .hldr > ul > li:nth-child(2) > p { float: none!important; display: block!important; width: 100%!important;}
+	.home .sec-7 .hldr > ul { text-align: center!important;}
+	.home .sec-7 {padding: 20px 20px 10px!important;}
+	footer {padding: 20px!important;}
+
+
+}
+
+
+
+/*=================MOBILE========================*/
+
+
+@media only screen and (max-width: 600px){
+	.home .sec-5 .hldr .mble_hldr img { padding: 0px!important; width: 200px!important; display: block; margin: 0 auto;}
+	.home .sec-5 .hldr .mble_hldr { float: none!important;}
+	.home .sec-5 .hldr > ul > li.img-list { position: relative!important;}
+	.home .sec-5 .hldr { padding-bottom: 0px!important;}
+
+	.home .sec-1 .hero { max-width: 100%!important; left: 0!important;}
+
+	.navigator .right_part > ul > li:nth-child(2){display: none!important}
+
+	.home .sec-3 .phone-hldr img { width: 150px!important;}
+	.home .sec-3 .hldr > h3{ margin-bottom: 20px!important}
+
+	.home .sec-3 ul.item_list > li .contact_hldr{margin-top: 20px!important; margin-bottom: 30px!important; text-align: center!important;}
+
+	.home .sec-4 .hldr > ul > li.img-list aside img { width: 220px!important;}
+	.home .sec-5 .hldr .mble_hldr img { width: 170px!important;}
+	.home .sec-4 .hldr > ul > li > .listing .contact_hldr{ text-align: center;}
+	.home .sec-5 .hldr > ul > li > .listing > ul > li {margin-bottom: 20px!important;}
+	.home .sec-5 .hldr > ul > li.img-list aside{min-height: 200px!important;}
+	.home .sec-6 {padding: 30px 0px!important;}
+
+	.home .sec-7 { padding: 20px 0px 10px!important;}
+	.home .sec-6 .hldr .cnt_us a {display: block!important;}
+	.home .sec-5 .hldr > ul > li > .listing .contact_hldr_white {text-align: center!important;}
+	
+	.custom-nav .nav_hldr > li a { font-size: 16px!important; padding: 0px 15px!important;}
+
+	.home .sec-2 .hldr .left_img > ul > li:nth-child(2) { padding: 0px!important; 	width: 100%!important;}
+	.home .sec-2 .hldr .left_img > ul > li:first-child { min-height: auto!important; width: 100%!important; margin-bottom: 20px;}
+	.home .sec-2 .hldr .right_img > ul > li {padding: 0px!important; width: 100%!important;}
+	.home .sec-2 .hldr .right_img > ul > li:first-child .contact_hldr {margin-top: 25px!important; margin-bottom: 35px; text-align: center;}
+	.home .sec-2 .hldr .left_img > ul > li:nth-child(2) .contact_hldr { text-align: center;}
+
+} 
